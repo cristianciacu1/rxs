@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+p {
+  text-align: left;
+  font-size: 30px;
+}
+
+.parallaxHeight {
+  height: 100vh;
+}
+
+.aboutMe img {
+  width: 100vw;
+}
+
+.textForTitle p {
+  text-align: center;
+  font-size: 35;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.2;
+}
+
+.Page100 {
+  height: 100vh;
+}
+
+.text2 {
+  padding-top: 8%;
+}
+
+.padding-0{
+  padding-right:0 !important;
+  padding-left:0 !important;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .text2 {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .textInTheMiddle {
+    top: 50%;
+    bottom: 50%;
+    transform: translate(0%, 60%);
+  }
+
+  .textInTheMiddle2 {
+    top: 50%;
+    bottom: 50%;
+    transform: translate(0%, 75%);
+  }
+
+  div {
+    margin: 0 auto;
+  }
+}

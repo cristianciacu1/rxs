@@ -1,0 +1,50 @@
+.root {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.gridList {
+    width: 500;
+    height: 500;
+}
+
+.boot {
+    width: 500px !important;
+    height: 500px !important; 
+}
+
+.font {
+    font-family: 'Muli', sans-serif;
+
+}
+
+.TileMobile img {
+    border: 1px solid #ffffff;
+    border-radius: 30%;
+}
+
+.padding {
+    padding: 50px 0 50px 0;
+}
+
+#padding2 {
+    padding-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.94);
+}
+
+@media screen and (max-width: 770px) {
+    GridListTile:nth-child(n3) {
+        display: none;
+    }
+}
