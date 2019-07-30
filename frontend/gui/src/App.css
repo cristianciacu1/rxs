@@ -1,28 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 p {
   text-align: left;
   font-size: 30px;
@@ -30,6 +5,10 @@ p {
 
 .parallaxHeight {
   height: 100vh;
+}
+
+.parallaxHeight2 {
+  height: 65vh;
 }
 
 .aboutMe img {
@@ -45,6 +24,14 @@ p {
 
 .Page100 {
   height: 100vh;
+}
+
+video{
+  object-fit: cover;
+}
+
+.video {
+  width: 100%;
 }
 
 .text2 {
@@ -68,6 +55,14 @@ p {
 @media screen and (max-width: 770px) {
   .text2 {
     padding-top: 20px;
+  }
+
+  .parallaxHeight{
+    height: 85vh;
+  }
+
+  .insideStyles{
+    font-size: 20px;
   }
 }
 

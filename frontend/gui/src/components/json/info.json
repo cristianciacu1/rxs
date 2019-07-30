@@ -1,0 +1,81 @@
+[
+    {
+      "id": 0,
+      "name": "Cars",
+      "image": "http://192.168.1.7:8000/media/post_images/fr.png",
+      "categoryName": "Cars",
+      "categoryDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco" ,
+      "categoryLink": "cars/",
+      "content": [
+        {
+          "image": "http://192.168.1.7:8000/media/post_images/fff.png",
+          "index": 0
+        },
+        {
+          "image": "http://192.168.1.7:8000/media/post_images/fff.png",
+          "index": 1
+        },
+        {
+            "image": "http://192.168.1.7:8000/media/post_images/fff.png",
+            "index": 2
+        },
+        {
+            "image": "http://192.168.1.7:8000/media/post_images/fff.png",
+            "index": 3
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Fashion",
+      "image": "http://192.168.1.7:8000/media/post_images/fr.png",
+      "categoryName": "Fashion",
+      "categoryDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco" ,
+      "categoryLink": "fashion/",
+      "content": [
+        {
+          "image": "http://192.168.1.7:8000/media/post_images/fff.png",
+          "index": 0
+        },
+        {
+          "image": "http://192.168.1.7:8000/media/post_images/fff.png",
+          "index": 0
+        },
+        {
+            "image": "http://192.168.1.7:8000/media/post_images/fff.png",
+            "index": 0
+        },
+        {
+            "image": "http://192.168.1.7:8000/media/post_images/fff.png",
+            "index": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Food",
+      "image": "http://192.168.1.7:8000/media/post_images/fr.png",
+      "categoryName": "Food",
+      "categoryDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco" ,
+      "categoryLink": "food/",
+      "content": [
+        {
+          "image": "http://192.168.1.7:8000/media/post_images/fff.png",
+          "index": 0
+        },
+        {
+          "image": "http://192.168.1.7:8000/media/post_images/fff.png",
+          "index": 0
+        },
+        {
+            "image": "http://192.168.1.7:8000/media/post_images/fff.png",
+            "index": 0
+        },
+        {
+            "image": "http://192.168.1.7:8000/media/post_images/fff.png",
+            "index": 0
+        }
+      ]
+    }
+  ]
+

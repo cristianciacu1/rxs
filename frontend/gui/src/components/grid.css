@@ -1,3 +1,12 @@
+@font-face{
+    src: url(../fonts/FuturaPTBook.otf);
+    font-family: futura;
+}
+
+.customFont {
+    font-family: futura;
+}
+
 .root {
     display: flex;
     flex-wrap: wrap;
@@ -5,9 +14,70 @@
     overflow: hidden;
 }
 
+.font2{
+    font-family: 'Oswald', sans-serif;
+}
+
+.font3{
+    font-family: futura;
+}
+
+.special .col-md-6 {
+    border: 20px solid #fff;
+}
+
 .gridList {
     width: 500;
     height: 500;
+}
+
+.imageHero {
+    width: 100%;
+    height: 110px;
+    
+}
+
+.formCenter {
+    top:50%;
+    transform: translate(0, 20%);
+}
+
+.testimonial .circle{
+    border-radius: 50%;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.loadCenter{
+    top:50%;
+    left:50%;
+    transform: translate(50%, 50%);
+}
+
+.aligner-item{
+    max-width: 50%;
+}
+
+.Page1002{
+    height: 100vh;
+}
+
+.Page1003{
+    height: 100vh;
+    width: 100vw;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
 }
 
 .boot {
@@ -17,7 +87,14 @@
 
 .font {
     font-family: 'Muli', sans-serif;
+}
 
+.navbar-toggler-icon span {
+    color: #000;
+}
+
+.font a{
+    color: #000
 }
 
 .TileMobile img {
@@ -25,12 +102,123 @@
     border-radius: 30%;
 }
 
+.imageGrid img {
+    width: 100%;
+    
+}
+
+.textOnImage{
+    position: absolute;
+    color: #fff;
+}
+
+.imageGrid2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 200px;
+    text-align: left;
+    font-family: 'Muli', sans-serif !important;
+}
+
+.imageGrid2 h2{
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.textCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageGrid2 p{
+    font-size: 18px;
+    color: #edde73 ;
+    font-weight: 100;
+}
+
+.paddingBottom {
+    padding-bottom: 60px;
+}
+
+.paddingBottom1{
+    padding-bottom: 60px;
+}
+
+.darkImage img{
+    filter: brightness(87%);
+}
+
+.aBlack a{
+    color: black !important;
+}
+
+.aBlack2 a{
+    color: black !important;
+}
+
+.aBlack2 a:hover{
+    text-decoration: underline #000;
+    transition: 0.1s;
+}
+
+.aWhite a{
+    color: #ECF0F1 !important
+}
+
+.aBlack a:hover{
+    color: black !important;
+}
+
+.imageGrid .col-lg-6 {
+    padding-bottom: 25px;
+}
+
+.paddingText {
+    padding-top: 10px;
+}
+
+.paddingTitle{
+    padding: 90px 0 50px 0;
+}
+
 .padding {
-    padding: 50px 0 50px 0;
+    padding: 80px 0 80px 0;
+}
+
+.paddingText2 {
+    padding-top: 80px;
+}
+
+.paddingText3 {
+    padding-bottom: 80px;
+}
+
+.paddingText31 {
+    padding-bottom: 80px;
 }
 
 #padding2 {
     padding-bottom: 50px;
+}
+
+.padding3{
+    padding: 20px 0 20px 0;
+}
+
+.paddingVideo {
+    padding: 20px 0 60px 0; 
+}
+
+.padding5 {
+    padding: 100px 0 0 0;
+}
+
+.paddingWNavbar {
+    padding: 127px 0 80px 0;
 }
 
 a {
@@ -38,13 +226,158 @@ a {
     color: rgba(0, 0, 0, 0.87);
 }
 
+.lineUnder {
+    width: 50px;
+    height: 2px;
+    border-top: 2px solid #000;
+    padding-bottom: 15px;
+    margin: 10px auto;
+}
+
 a:hover {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.94);
 }
 
+.detailView h3 {
+    font-weight: 100;
+    color: rgb(138, 138, 138);
+}
+
+.detailView h1 {
+    font-weight: 600;
+}
+
+.detailView h4 {
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.detailView p {
+    font-weight: 100;
+    font-size: 22px;
+    color: rgb(138, 138, 138);
+}
+
+.contact {
+    background-color: rgb(248, 248, 248);
+    background-image: url(../resources/smecherie.jpg);
+    background-position: 50% 0%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 80px 0 40px 0 !important;
+}
+
+.contact2{
+    background-color: rgb(248, 248, 248);
+    background-image: url(../resources/smecherie.jpg);
+    background-position: 50% 0%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.imageFit{
+    margin-top: 60px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),url("http://192.168.1.7:8000/media/post_images/e02d81c2-83e9-4a32-b0f7-9683c417673e.jpg");
+    height: 100vh; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.16), 0 2px 10px 2px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.round {
+    border-radius: 0 0 10% 10%;
+}
+
+.round2{
+    border-radius: 0 0 5% 5%;
+}
+
+.player-wrapper {
+    position: relative;
+    padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+  }
+   
+  .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+.fundal {
+    background-color: rgb(248, 248, 248);
+}
+
+.wrapper{
+    height: 80vh;
+    background-color: #2C3E50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.empty{
+    flex-grow: 1;
+}
+
+.smallPart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    padding-top: 30px;
+}
+
+.stickBottom {
+    position: absolute;
+    bottom: 5rem;
+    left: 0;
+    right: 0;
+}
+
+.h1Footer{
+    font-size: 48px;
+}
+
+.h3Footer{
+    font-size: 28px;
+}
+
 @media screen and (max-width: 770px) {
     GridListTile:nth-child(n3) {
         display: none;
+    }
+
+    .Page1002 {
+        height: auto;
+    }
+
+    .paddingBottom1{
+        padding-bottom: 0;
+    }
+
+    .formCenter {
+        top: 0 ;
+        left: 0;
+        transform: translate(0,0);
+    }
+
+    .smallPart {
+        padding-top: 0;
+    }
+
+    .paddingText21{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .paddingText31{
+        padding-bottom: 30px;
     }
 }

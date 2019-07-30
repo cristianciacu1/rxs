@@ -1,11 +1,11 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
 import '../App.css';
-import { Link, Events, animateScroll as scroll, scroller } from 'react-scroll';
+import { Events, animateScroll as scroll, scroller } from 'react-scroll';
 
 import Text from './text';
-import MediaQuery from './imageGrid2';
-
+import ImagegridList from './imageGrid3';
+import Servicii from './services1';
 
 const styles = {
     fontFamily: "sans-serif",
@@ -44,6 +44,15 @@ class MyComponent extends React.Component {
         Events.scrollEvent.register('end', function () {
           console.log("end", arguments);
         });
+
+        fetch('http://192.168.1.7:8000/api/')
+          .then(res => res.json())
+          .then(json => {
+            this.setState({
+              isLoaded: true,
+              items: json,
+            })
+          });
     
       }
       scrollToTop() {
@@ -81,17 +90,6 @@ class MyComponent extends React.Component {
             containerId: 'scroll-container'
           }));
       }
-    
-      componentDidMount() {
-        fetch('http://localhost:8000/api/posts/')
-          .then(res => res.json())
-          .then(json => {
-            this.setState({
-              isLoaded: true,
-              items: json,
-            })
-          });
-      }
 
       componentWillUnmount() {
         Events.scrollEvent.remove('begin');
@@ -99,25 +97,24 @@ class MyComponent extends React.Component {
       }
     render() {
 
-      var { isLoaded, items } = this.state;
-
         return (
             <div style={styles}>
                 <Parallax bgImage={require('../resources/img.jpg')} strength={500}>
                     <div className = "parallaxHeight">
-                        <div style={insideStyles}>Salut,<br></br>Eu sunt <b>Cristi!</b>
+                        <div style={insideStyles}>Salut,<br></br>Eu sunt <b>Radu!</b>
                             <br></br>
                             <div className="textForTitle">
-                                <p className="textForTitle">Incerc sa fiu cel mai bun <b>eu</b> in majoritarea cazurilor</p>
+                                <p className="textForTitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                             </div>
                         </div>
-                        <section id="section04" class="demo">
-                            <a><span><Link activeClass="active" className="text" to="text" spy={true} smooth={true} duration={500} >Hf</Link></span></a>
+                        <section id="section04" className="demo">
+                            <a><span></span></a>
                         </section>
                     </div>
                 </Parallax>
                 <Text />
-                <MediaQuery iteme = {this.state.items} />
+                <ImagegridList iteme = {this.state.items}/>
+                <Servicii />   
             </div>
         );
     }

@@ -4,10 +4,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
 
-const styles = {
-    fontFamily: "sans-serif",
-    textAlign: "center"
-};
 const insideStyles = {
     padding: 20,
     position: "absolute",
@@ -40,8 +36,8 @@ export default function My404Error() {
                 <p className="textForTitle">
                     Sorry, the page you are looking for doesn`t exist!<br/>
                     404<br/>
-                    <Button variant="contained" className={classes.button}>
-                        <Link to="/home">HomePage</Link>
+                    <Button variant="contained" className={`${classes.button} aBlack`}>
+                        <Link to="/" onUpdate={() => window.scrollTo(0, 0)}>HomePage</Link>
                     </Button>
                 </p>
             </div>

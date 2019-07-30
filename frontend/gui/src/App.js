@@ -1,14 +1,9 @@
 import React from 'react';
 import './scrollDownButton.css';
-import MyComponent from './components/parallax';
-import Text from './components/text';
-import MediaQuery from './components/imageGrid2';
-import { BrowserRouter as Router, Route, Link, Redirect, Switch } from "react-router-dom";
+import './components/grid.css';
 
-import About from './components/About';
-//import Work from './components/Work';
-import Main from './components/Main';
-import My404Component from './components/myError'
+import BrowserRouter from './components/browserRouter';
+import NavbarPage from './components/navbar';
 
 class App extends React.Component {
 
@@ -17,16 +12,18 @@ class App extends React.Component {
     this.state = {
       items: [],
       isLoaded: false,
+      index: 0,
     }
 }
 
   componentDidMount() {
-    fetch('http://localhost:8000/api/posts/')
+    fetch('http://192.168.1.7:8000/api/')
       .then(res => res.json())
       .then(json => {
         this.setState({
           isLoaded: true,
           items: json,
+          index: 0,
         })
       });
   }
@@ -36,20 +33,19 @@ class App extends React.Component {
     var { isLoaded } = this.state;
 
       if (!isLoaded) {
-        return <div>Loading...</div>
+        return(
+          <div className="d-flex justify-content-center" >
+            <div className="spinner-border" role="status">
+              <span className="sr-only">Loading...</span>
+            </div>
+          </div>
+        )
       }
       else {
         return (
-          <Router>
-            <div className="App">
-            </div>
-            <Switch>
-              <Route exact path="/" component={Main} />
-              <Route path="/home/" component={MyComponent} />
-              <Route path="/about/" component={About} />
-              <Route component={My404Component} />
-            </Switch>
-          </Router>
+          <BrowserRouter iteme = {this.state.items}> 
+            <NavbarPage />
+          </BrowserRouter>
         );
       }
   }

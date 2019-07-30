@@ -1,6 +1,6 @@
 #section04 a {
     padding-top: 60px;
-    color: transparent;
+    color: transparent !important;
   }
   #section04 a span {
     position: absolute;
